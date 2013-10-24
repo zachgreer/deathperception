@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 [RequireComponent (typeof(ZDriveController))]
 public class GameManager : SingletonBehaviour<GameManager> {
-	public GameObject terrain;
+	public List<GameObject> chunks;
 
 	bool paused;
 	GameObject playerShip;
@@ -12,7 +12,7 @@ public class GameManager : SingletonBehaviour<GameManager> {
 	List<GameObject> bullets;
 	ZDriveController zdriveController;
 
-	void TogglePause() {
+	public void TogglePause() {
 		paused = !paused;
 		foreach (GameObject obj in ships) {
 			obj.GetComponent<Movement>().enabled = !paused;
@@ -21,8 +21,11 @@ public class GameManager : SingletonBehaviour<GameManager> {
 		foreach (GameObject obj in bullets) {
 			obj.GetComponent<Movement>().enabled = !paused;
 		}
+		foreach (GameObject obj in chunks) {
+			obj.GetComponent<Movement>().enabled = !paused;
+		}
 		zdriveController.enabled = !paused;
-		terrain.GetComponent<Movement>().enabled = !paused;
+		playerShip.GetComponent<CannonController>().enabled = !paused;
 	}
 
 	void ToggleControlMode() {
@@ -30,7 +33,7 @@ public class GameManager : SingletonBehaviour<GameManager> {
 	}
 
 	void GameOver() {
-		terrain.GetComponent<Movement>().enabled = false;
+	
 	}
 
 	public void RegisterShip(GameObject obj) {
