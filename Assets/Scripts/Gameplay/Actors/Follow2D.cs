@@ -3,7 +3,7 @@
 public class Follow2D : MonoBehaviour
 {
 	[SerializeField] Transform m_target;
-	[SerializeField] float m_zPosition;
+	const float m_zPosition = -5;
 	[HideInInspector] Transform m_transform;
 	[HideInInspector] Vector3 m_newAngles;
 
