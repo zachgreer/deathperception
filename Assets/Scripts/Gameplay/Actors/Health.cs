@@ -7,6 +7,14 @@ public class Health : MonoBehaviour
 
 	[HideInInspector] int m_health;
 	[SerializeField] HealthParameters m_healthParameters;
+
+	void OnDeath()
+	{
+		if (Died != null)
+		{
+			Died(gameObject);
+		}
+	}
 	
 	public void Add(int health)
 	{
@@ -22,25 +30,19 @@ public class Health : MonoBehaviour
 		}
 	}
 
-	void OnDeath()
-	{
-		if (Died != null)
-		{
-			Died(gameObject);
-		}
-	}
-
-	void Start()
+	public void Revive()
 	{
 		m_health = m_healthParameters.maxHealth;
 	}
 
-	void OnTriggerEnter(Collider other)
+	public void Die()
 	{
-		if (other.tag != "Field" && other.tag != "Bullet" && other.tag != "Spawner")
-		{
-			print("trigger!");
-			Subtract(m_healthParameters.maxHealth);
-		}
+		m_health = 0;
+		OnDeath();
+	}
+
+	void Start()
+	{
+		Revive();
 	}
 }

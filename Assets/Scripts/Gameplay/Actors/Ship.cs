@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Ship : MonoBehaviour
 {
 	[SerializeField] Movement m_movement;
+	[SerializeField] Health m_health;
+	[SerializeField] Cannon m_cannon;
 	[SerializeField] Hitbox m_2dHitbox;
 	[SerializeField] Hitbox m_3dHitbox;
 
-	void ReturnToPool()
+	void Died(GameObject dead)
 	{
-		transform.parent.GetComponent<ObjectPool>().Return(gameObject);
+		gameObject.SetActive(false);
 	}
 
 	void Switching()
@@ -23,15 +25,14 @@ public class Bullet : MonoBehaviour
 		m_3dHitbox.ToggleEnable();
 	}
 
-	void LeftField()
+	void HitBullet()
 	{
-		ReturnToPool();
+		m_health.Subtract(1);
 	}
 
 	void HitSolid()
 	{
-		// Play animation
-		ReturnToPool();
+		m_health.Die();
 	}
 
 	public void MoveTo(Vector3 position)
@@ -44,14 +45,22 @@ public class Bullet : MonoBehaviour
 		m_movement.MoveTowards(direction);
 	}
 
+	public void Fire()
+	{
+		m_cannon.Fire();
+	}
+
 	void Awake()
 	{
-		m_2dHitbox.LeftField += new Hitbox.LeftFieldEventHandler(LeftField);
-		m_3dHitbox.LeftField += new Hitbox.LeftFieldEventHandler(LeftField);
+		m_health.Died += new Health.DeathEventHandler(Died);
+
 		m_2dHitbox.HitSolid += new Hitbox.HitSolidEventHandler(HitSolid);
 		m_3dHitbox.HitSolid += new Hitbox.HitSolidEventHandler(HitSolid);
 
-		ZDrive.Instance.Switching += Switching; // new ZDrive.SwitchingEventHandler(Switching);
-		ZDrive.Instance.Switched += Switched; // new ZDrive.SwitchedEventHandler(Switched);
+		m_2dHitbox.HitBullet += new Hitbox.HitBulletEventHandler(HitBullet);
+		m_3dHitbox.HitBullet += new Hitbox.HitBulletEventHandler(HitBullet);
+
+		ZDrive.Instance.Switching += new ZDrive.SwitchingEventHandler(Switching);
+		ZDrive.Instance.Switched += new ZDrive.SwitchedEventHandler(Switched);
 	}
 }

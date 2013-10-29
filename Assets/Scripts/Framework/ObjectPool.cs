@@ -27,6 +27,7 @@ public class ObjectPool : MonoBehaviour
 			m_pool[i].gameObject.transform.parent = transform;
 			m_pool[i].gameObject.AddComponent<PoolMember>();
 			m_pool[i].gameObject.GetComponent<PoolMember>().index = i;
+			m_pool[i].gameObject.SetActive(true);
 			m_pool[i].gameObject.SetActive(false);
 		}
 		m_pool[m_size - 1].nextFree = -1;

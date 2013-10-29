@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 
-public class BulletController : Controller {
-	[HideInInspector] protected Transform m_transform;
-
-	void Start()
-	{
-		m_transform = transform;
-	}
+public class BulletController : MonoBehaviour
+{
+	[SerializeField] Bullet m_bullet;
+	[SerializeField] Transform m_transform;
 
 	void Update()
 	{
-		m_pawn.MoveTowards(m_transform.forward);
+		m_bullet.MoveTowards(m_transform.forward);
 	}
 }
