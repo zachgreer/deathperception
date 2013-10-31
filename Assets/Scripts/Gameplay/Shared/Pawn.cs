@@ -55,4 +55,19 @@ public class Pawn : MonoBehaviour
 		ZDrive.Instance.Switching += Switching;
 		ZDrive.Instance.Switched += Switched;
 	}
+
+	void OnDestroy()
+	{
+		if (ZDrive.Instance != null)
+		{
+			ZDrive.Instance.Switching -= Switching;
+			ZDrive.Instance.Switched -= Switched;
+		}
+	}
+
+	void OnApplicationQuit()
+	{
+		ZDrive.Instance.Switching -= Switching;
+		ZDrive.Instance.Switched -= Switched;
+	}
 }

@@ -37,9 +37,5 @@ public class ThreeShot : Cannon
 	{
 		base.Awake();
 	}
-
-	void Update()
-	{
-		m_transform.Rotate(0f, 0f, 90f * Time.deltaTime);
-	}
+	
 }
