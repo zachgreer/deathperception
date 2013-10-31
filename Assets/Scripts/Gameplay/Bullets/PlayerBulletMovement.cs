@@ -2,12 +2,10 @@
 using System;
 using System.Collections;
 
-public class Movement : MonoBehaviour
+public class PlayerBulletMovement : Movement
 {
-	[SerializeField] float m_speed;
-	[HideInInspector] protected bool m_movingTo;
-	[HideInInspector] protected Vector3 m_direction;
-	[HideInInspector] protected Transform m_transform;
+	[SerializeField] static float m_speed = 30;
+
 
 	const float k_moveToTolerance = 0.05f;
 
@@ -27,12 +25,12 @@ public class Movement : MonoBehaviour
 		}
 	}
 	
-	public void setSpeed(float sp){
+	public static void setSpeed(float sp){
 		
 		m_speed = sp;
 	}
 	
-	public float getSpeed(){
+	public static float getSpeed(){
 		return m_speed;
 	}
 

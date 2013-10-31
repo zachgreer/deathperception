@@ -48,6 +48,11 @@ public class Health : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
+		if(other.tag == "Solid")
+		{
+			Subtract (100);
+		}
+		
 		if (other.tag == "Bullet")
 		{
 			Subtract(1);

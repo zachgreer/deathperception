@@ -19,6 +19,16 @@ public class ZDrive : SingletonBehaviour<ZDrive>
 		yield return new WaitForSeconds(m_coolDown);
 		m_onCooldown = false;
 	}
+	
+	//setter/getter for debug
+	
+	public void setCoolDown(float cd){
+		
+		m_coolDown = cd;
+	}
+	public float getCoolDown(){
+		return m_coolDown;
+	}
 
 	void OnSwitching()
 	{
