@@ -48,12 +48,12 @@ public class Health : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.tag == "Solid")
+		if(other.tag == "Enemy")
 		{
-			Subtract (100);
+			Subtract(100);
 		}
 		
-		if (other.tag == "Bullet")
+		if(other.tag == "Bullet")
 		{
 			Subtract(1);
 		}

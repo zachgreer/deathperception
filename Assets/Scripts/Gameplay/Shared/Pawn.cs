@@ -10,9 +10,20 @@ public class Pawn : MonoBehaviour
 	[HideInInspector] Movement m_movement;
 	[HideInInspector] Cannon m_cannon;
 	[HideInInspector] Multicollider m_multiCollider;
+	public int points;
 
 	void Died()
 	{
+		if(gameObject.tag == "Player"){
+			
+			Score.clearCombo();
+			
+		}
+		if(gameObject.tag == "Enemy"){
+			
+			Score.addScore (points);
+		}
+		
 		// Explosion!
 		gameObject.SetActive(false);
 	}
@@ -58,6 +69,8 @@ public class Pawn : MonoBehaviour
 
 	void OnDestroy()
 	{
+		
+		
 		if (ZDrive.Instance != null)
 		{
 			ZDrive.Instance.Switching -= Switching;
