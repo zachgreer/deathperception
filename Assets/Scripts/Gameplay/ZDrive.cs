@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu ("Camera/ZDrive")]
 [RequireComponent (typeof(ViewSwitch))]
 public class ZDrive : SingletonBehaviour<ZDrive>
 {
@@ -9,9 +10,9 @@ public class ZDrive : SingletonBehaviour<ZDrive>
 	public delegate void SwitchedEventHandler();
 	public event SwitchedEventHandler Switched;
 
-	[SerializeField] float m_coolDown;
-	[HideInInspector] ViewSwitch m_viewSwitch;
-	[HideInInspector] bool m_onCooldown;
+	[SerializeField] private float m_coolDown;
+	[HideInInspector] private ViewSwitch m_viewSwitch;
+	[HideInInspector] private bool m_onCooldown;
 
 	IEnumerator DoCooldown()
 	{

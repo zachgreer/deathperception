@@ -1,24 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu ("Camera/ViewSwitch")]
 [RequireComponent (typeof(Camera))]
 public class ViewSwitch : MonoBehaviour
 {
 	public delegate void SwitchedEventHandler();
 	public event SwitchedEventHandler Switched;
 
-	[SerializeField] float m_duration;
-	[SerializeField] float m_fov;
-	[SerializeField] float m_near;
-	[SerializeField] float m_far;
-	[SerializeField] float m_orthoSize;
-	[SerializeField] Transform m_orthoTransform;
-	[SerializeField] Transform m_perspTransform;
+	[SerializeField] private float m_duration;
+	[SerializeField] private float m_fov;
+	[SerializeField] private float m_near;
+	[SerializeField] private float m_far;
+	[SerializeField] private float m_orthoSize;
+	[SerializeField] private Transform m_orthoTransform;
+	[SerializeField] private Transform m_perspTransform;
 
-	[HideInInspector] bool m_isOrtho;
-	[HideInInspector] float m_aspectRatio;
-	[HideInInspector] Matrix4x4 m_orthoProjection;
-	[HideInInspector] Matrix4x4 m_perspProjection;
+	[HideInInspector] private bool m_isOrtho;
+	[HideInInspector] private float m_aspectRatio;
+	[HideInInspector] private Matrix4x4 m_orthoProjection;
+	[HideInInspector] private Matrix4x4 m_perspProjection;
 
 	Matrix4x4 MatrixLerp(Matrix4x4 from, Matrix4x4 to, float weight) 
 	{
