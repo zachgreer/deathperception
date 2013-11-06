@@ -1,0 +1,6 @@
+<level name="Outer Space">
+	<wave t="5.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="8.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="11.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="14.0" prefab="Wave_3Popcorn_2"></wave>
+</level>
