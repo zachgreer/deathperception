@@ -1,9 +1,0 @@
-1. Create a parent game object to hold the enemies. The name of this prefab should be "Wave_<NUMBER OF ENMEMIES><NAME OF ENEMY PREFAB>". For waves with the same number and type of enemies, append an extra "_<NUMBER>" to the end to differentiate it from waves with the same composition. For example, Wave_3Popcorn_1.
-
-2. Attach an iTweenPath component to each enemy in the wave. The editor for iTweenPaths should be intuitive, but you can visit http://pixelplacement.com/2010/12/03/visual-editor-for-itween-motion-paths/ if it is not.
-
-3. Drag the path nodes around to get the path that you want. Try to keep each node evenly apart; iTweenPath does not support moving along a path with constant speed out of the box, but keeping the nodes evenly spaced can help. Each path should end off-screen.
-
-4. Attach a FollowPath component to all enemies. Assign each a time to get it to traverse the path in that many seconds.
-
-5. Drag the complete parent game object into this folder to save the prefab.

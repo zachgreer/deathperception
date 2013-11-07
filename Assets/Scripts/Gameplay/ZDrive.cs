@@ -13,6 +13,7 @@ public class ZDrive : SingletonBehaviour<ZDrive>
 	[SerializeField] private float m_coolDown;
 	[HideInInspector] private ViewSwitch m_viewSwitch;
 	[HideInInspector] private bool m_onCooldown;
+	[HideInInspector] private bool m_isOrtho;
 
 	IEnumerator DoCooldown()
 	{
@@ -29,6 +30,11 @@ public class ZDrive : SingletonBehaviour<ZDrive>
 	}
 	public float getCoolDown(){
 		return m_coolDown;
+	}
+
+	public bool IsOrtho()
+	{
+		return m_isOrtho;
 	}
 
 	void OnSwitching()
@@ -54,12 +60,14 @@ public class ZDrive : SingletonBehaviour<ZDrive>
 			OnSwitching();
 			StartCoroutine(DoCooldown());
 			m_viewSwitch.Switch();
+			m_isOrtho = !m_isOrtho;
 		}
 	}
 
 	void Awake()
 	{
 		m_onCooldown = false;
+		m_isOrtho = true;
 	}
 
 	void Start()

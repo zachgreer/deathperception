@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-[AddComponentMenu ("Enemies/FollowPath")]
+[AddComponentMenu ("Enemies/SplineController")]
 [RequireComponent (typeof(iTweenPath))]
-public class FollowPath : MonoBehaviour
+public class SplineController : MonoBehaviour
 {
 	[HideInInspector] private iTweenPath m_path;
 

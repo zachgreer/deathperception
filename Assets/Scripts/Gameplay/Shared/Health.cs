@@ -5,8 +5,9 @@ public class Health : MonoBehaviour
 	public delegate void DeathEventHandler();
 	public event DeathEventHandler Died;
 
-	[HideInInspector] int m_health;
-	[SerializeField] int m_maxHealth;
+	[SerializeField] private HealthConfig m_config;
+
+	[HideInInspector] private int m_health;
 
 	void OnDeath()
 	{
@@ -18,7 +19,7 @@ public class Health : MonoBehaviour
 	
 	public void Add(int health)
 	{
-		m_health = Mathf.Clamp(m_health + health, 0, m_maxHealth);
+		m_health = Mathf.Clamp(m_health + health, 0, m_config.maxHealth);
 	}
 
 	public void Subtract(int health)
@@ -32,13 +33,18 @@ public class Health : MonoBehaviour
 
 	public void Revive()
 	{
-		m_health = m_maxHealth;
+		m_health = m_config.maxHealth;
 	}
 
 	public void Die()
 	{
 		m_health = 0;
 		OnDeath();
+	}
+
+	public int HealthPoints
+	{
+		get { return m_health; }
 	}
 
 	void Awake()
@@ -48,7 +54,7 @@ public class Health : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.tag == "Enemy")
+		if(other.tag == "Solid")
 		{
 			Subtract(100);
 		}

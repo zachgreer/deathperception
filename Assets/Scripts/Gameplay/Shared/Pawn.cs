@@ -10,7 +10,6 @@ public class Pawn : MonoBehaviour
 	[HideInInspector] Movement m_movement;
 	[HideInInspector] Cannon m_cannon;
 	[HideInInspector] Multicollider m_multiCollider;
-	public int points;
 
 	void Died()
 	{
@@ -18,10 +17,6 @@ public class Pawn : MonoBehaviour
 			
 			Score.clearCombo();
 			
-		}
-		if(gameObject.tag == "Enemy"){
-			
-			Score.addScore (points);
 		}
 		
 		// Explosion!

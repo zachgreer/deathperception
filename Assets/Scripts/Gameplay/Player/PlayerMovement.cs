@@ -2,8 +2,7 @@
 
 public class PlayerMovement : Movement
 {
-	[SerializeField] float m_horizontalLimit;
-	[SerializeField] float m_verticalLimit;
+	[SerializeField] PlayerMovementConfig m_config;
 	[HideInInspector] bool m_in3dMode;
 
 	void Switched()
@@ -19,7 +18,7 @@ public class PlayerMovement : Movement
 			m_direction.z = -m_direction.x;
 			m_direction.x = 0f;
 		}
-		m_transform.position = new Vector3(Mathf.Clamp(m_transform.position.x, -m_horizontalLimit, m_horizontalLimit), Mathf.Clamp(m_transform.position.y, -m_verticalLimit, m_verticalLimit), Mathf.Clamp(m_transform.position.z, -m_horizontalLimit, m_horizontalLimit));
+		m_transform.position = new Vector3(Mathf.Clamp(m_transform.position.x, -m_config.horizontalLimit, m_config.horizontalLimit), Mathf.Clamp(m_transform.position.y, -m_config.verticalLimit, m_config.verticalLimit), Mathf.Clamp(m_transform.position.z, -m_config.horizontalLimit, m_config.horizontalLimit));
 	}
 
 	protected override void Awake()

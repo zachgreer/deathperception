@@ -1,6 +1,41 @@
 <level name="Outer Space">
 	<wave t="5.0" prefab="Wave_3Popcorn_1"></wave>
 	<wave t="8.0" prefab="Wave_3Popcorn_2"></wave>
-	<wave t="11.0" prefab="Wave_3Popcorn_1"></wave>
-	<wave t="14.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="11.0" prefab="Wave_3Popcorn_3"></wave>
+	<wave t="15.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="17.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="20.0" prefab="Wave_3Popcorn_3"></wave>
+	<wave t="22.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="24.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="25.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="26.0" prefab="Wave_3Popcorn_3"></wave>
+	<wave t="27.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="27.5" prefab="Wave_4Popcorn_1"></wave>
+	<wave t="28.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="29.0" prefab="Wave_7Popcorn_1"></wave>
+	<wave t="32.0" prefab="Wave_4Popcorn_2"></wave>
+	<wave t="32.5" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="34.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="34.0" prefab="Wave_3Popcorn_3"></wave>
+	<wave t="34.5" prefab="Wave_4Popcorn_3"></wave>
+	<wave t="35.0" prefab="Wave_7Popcorn_1"></wave>
+	<wave t="36.0" prefab="Wave_4Popcorn_2"></wave>
+	<wave t="37.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="38.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="39.0" prefab="Wave_4Popcorn_2"></wave>
+	<wave t="40.5" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="41.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="42.0" prefab="Wave_3Popcorn_3"></wave>
+	<wave t="43.5" prefab="Wave_4Popcorn_3"></wave>
+	<wave t="44.0" prefab="Wave_7Popcorn_1"></wave>
+	<wave t="45.0" prefab="Wave_4Popcorn_2"></wave>
+	<wave t="46.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="47.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="48.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="49.0" prefab="Wave_3Popcorn_3"></wave>
+	<wave t="50.0" prefab="Wave_3Popcorn_1"></wave>
+	<wave t="50.5" prefab="Wave_4Popcorn_3"></wave>
+	<wave t="51.0" prefab="Wave_3Popcorn_2"></wave>
+	<wave t="52.0" prefab="Wave_4Popcorn_1"></wave>
+	<wave t="54.0" prefab="Wave_7Popcorn_1"></wave>
 </level>
