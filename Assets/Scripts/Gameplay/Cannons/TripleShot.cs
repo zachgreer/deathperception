@@ -2,8 +2,7 @@
 
 public class TripleShot : Cannon
 {
-	[SerializeField]
-	private TripleShotConfig m_config;
+	public TripleShotConfig Config;
 
 	[HideInInspector]
 	private Transform m_transform;
@@ -15,24 +14,27 @@ public class TripleShot : Cannon
 	{
 		if (Time.time > m_nextFire)
 		{
-			m_nextFire = Time.time + m_config.fireRate;
+			m_nextFire = Time.time + Config.fireRate;
 			BulletController bullet1 = BulletStack.Pop().GetComponent<BulletController>();
 			if (bullet1 != null)
 			{
 				bullet1.transform.position = m_transform.position;
-				bullet1.direction = Quaternion.AngleAxis(-m_config.angle, m_transform.right) * m_transform.forward;
+				bullet1.direction = Quaternion.AngleAxis(-Config.angle, m_transform.right) * m_transform.forward;
+				bullet1.gameObject.SetActive(true);
 			}
 			BulletController bullet2 = BulletStack.Pop().GetComponent<BulletController>();
 			if (bullet2 != null)
 			{
 				bullet2.transform.position = m_transform.position;
-				bullet2.direction = (Quaternion.AngleAxis(m_config.angle, m_transform.right) * Quaternion.AngleAxis(m_config.angle, m_transform.up)) * m_transform.forward;
+				bullet2.direction = (Quaternion.AngleAxis(Config.angle, m_transform.right) * Quaternion.AngleAxis(Config.angle, m_transform.up)) * m_transform.forward;
+				bullet2.gameObject.SetActive(true);
 			}
 			BulletController bullet3 = BulletStack.Pop().GetComponent<BulletController>();
 			if (bullet3 != null)
 			{
 				bullet3.transform.position = m_transform.position;
-				bullet3.direction = (Quaternion.AngleAxis(m_config.angle, m_transform.right) * Quaternion.AngleAxis(-m_config.angle, m_transform.up)) * m_transform.forward;
+				bullet3.direction = (Quaternion.AngleAxis(Config.angle, m_transform.right) * Quaternion.AngleAxis(-Config.angle, m_transform.up)) * m_transform.forward;
+				bullet3.gameObject.SetActive(true);
 			}
 		}
 	}

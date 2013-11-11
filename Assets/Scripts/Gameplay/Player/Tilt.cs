@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 
-// Attach to the Player's 3D Mesh to make it tilt (when in 3D mode).
+[AddComponentMenu ("Player/Tilt")]
 public class Tilt : MonoBehaviour
 {
-	[SerializeField] float m_speed;
-	[SerializeField] float m_snap;
-	[SerializeField] float m_yLimit;
-	[SerializeField] float m_zLimit;
-	[HideInInspector] Transform m_transform;
-	[SerializeField] Transform m_crosshair;
-	[HideInInspector] Vector3 m_crossHairOrigin;
-	[HideInInspector] bool m_tilt;
+	[SerializeField] private float m_speed;
+	[SerializeField] private float m_snap;
+	[SerializeField] private float m_yLimit;
+	[SerializeField] private float m_zLimit;
+	[SerializeField] private Transform m_crosshair;
+
+	[HideInInspector] private Transform m_transform;
+	
+	[HideInInspector] private Vector3 m_crossHairOrigin;
+	[HideInInspector] private bool m_tilt;
 
 	public void Toggle()
 	{
@@ -19,9 +21,14 @@ public class Tilt : MonoBehaviour
 
 	void Awake()
 	{
-		m_transform = transform;
+		m_transform = GetComponent<Transform>();
+
 		m_crossHairOrigin = m_crosshair.localPosition;
 		m_tilt = false;
+	}
+
+	void Start()
+	{
 		ZDrive.Instance.Switched += Toggle;
 	}
 

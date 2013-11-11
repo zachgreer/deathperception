@@ -2,8 +2,7 @@
 
 public class SingleShot : Cannon
 {
-	[SerializeField]
-	private CannonConfig m_config;
+	public CannonConfig Config;
 
 	[HideInInspector]
 	private Transform m_transform;
@@ -14,7 +13,7 @@ public class SingleShot : Cannon
 	{
 		if (Time.time > m_nextFire)
 		{
-			m_nextFire = Time.time + m_config.fireRate;
+			m_nextFire = Time.time + Config.fireRate;
 			BulletController bullet = BulletStack.Pop().GetComponent<BulletController>();
 			if (bullet != null)
 			{

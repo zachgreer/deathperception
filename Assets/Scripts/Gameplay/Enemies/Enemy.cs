@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu ("Enemy/Enemy")]
 public class Enemy : MonoBehaviour
 {
 	[SerializeField]
@@ -21,8 +22,7 @@ public class Enemy : MonoBehaviour
 	void Died()
 	{
 		Score.addScore(m_config.points);
-
-		gameObject.SetActive(false);
+		Destroy(gameObject);
 	}
 
 	void Switching()
@@ -94,5 +94,17 @@ public class Enemy : MonoBehaviour
 	{
 		ZDrive.Instance.Switching -= Switching;
 		ZDrive.Instance.Switched -= Switched;
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.tag == "Player")
+		{
+			m_health.Subtract(10);
+		}
+		if (other.tag == "Bullet")
+		{
+			m_health.Subtract(1);
+		}
 	}
 }

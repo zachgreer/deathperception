@@ -69,8 +69,6 @@ public class Pawn : MonoBehaviour
 
 	void OnDestroy()
 	{
-		
-		
 		if (ZDrive.Instance != null)
 		{
 			ZDrive.Instance.Switching -= Switching;

@@ -12,6 +12,7 @@ public class Gameplay : MonoBehaviour
 	void Respawn()
 	{
 		m_player.transform.position = m_spawnLocation.position;
+		m_player.GetComponent<Player>().ResetPowerups();
 		m_player.SetActive(true);
 	}
 
