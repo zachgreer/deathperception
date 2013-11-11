@@ -62,6 +62,11 @@ public class Pawn : MonoBehaviour
 		ZDrive.Instance.Switched += Switched;
 	}
 
+	void Start()
+	{
+		GetComponentInChildren<Cannon>().BulletStack = GameObject.Find("PlayerBulletStack").GetComponent<ObjectStack>();
+	}
+
 	void OnDestroy()
 	{
 		

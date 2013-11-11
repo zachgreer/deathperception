@@ -43,7 +43,8 @@ public class Bullet : MonoBehaviour
 		{
 			// Splash!
 		}
-		// Assume that all bullets are parented to pools.
-		transform.parent.GetComponent<ObjectPool>().Return(gameObject);
+		// Assume that all bullets are children of stacks.
+		gameObject.SetActive(false);
+		transform.parent.GetComponent<ObjectStack>().Push(gameObject);
 	}
 }

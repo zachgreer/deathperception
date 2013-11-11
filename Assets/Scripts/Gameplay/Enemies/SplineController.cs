@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 
-[AddComponentMenu ("Enemies/SplineController")]
+[AddComponentMenu ("Enemy/SplineController")]
 [RequireComponent (typeof(iTweenPath))]
 public class SplineController : MonoBehaviour
 {
-	[HideInInspector] private iTweenPath m_path;
+	[SerializeField]
+	private float m_time;
 
-	[SerializeField] private float m_time;
-	[SerializeField] private bool m_orientToPath;
+	[SerializeField]
+	private bool m_orientToPath;
+
+	[HideInInspector]
+	private iTweenPath m_path;
 	
 	private void DeleteSelf()
 	{
@@ -17,10 +21,6 @@ public class SplineController : MonoBehaviour
 	void Awake()
 	{
 		m_path = GetComponent<iTweenPath>();
-		if (m_time == 0f)
-		{
-			Debug.LogWarning(name + " has an assigned path time of 0 seconds.");
-		}
 	}
 
 	void Start()

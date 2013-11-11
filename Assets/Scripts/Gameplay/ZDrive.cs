@@ -21,20 +21,13 @@ public class ZDrive : SingletonBehaviour<ZDrive>
 		yield return new WaitForSeconds(m_coolDown);
 		m_onCooldown = false;
 	}
-	
-	//setter/getter for debug
-	
-	public void setCoolDown(float cd){
-		
-		m_coolDown = cd;
-	}
-	public float getCoolDown(){
-		return m_coolDown;
-	}
 
-	public bool IsOrtho()
+	public bool IsOrtho
 	{
-		return m_isOrtho;
+		get
+		{
+			return m_isOrtho;
+		}
 	}
 
 	void OnSwitching()
