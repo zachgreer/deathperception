@@ -26,7 +26,17 @@ public class SingleShot : Cannon
 
 	public override void FireAt(Vector3 targetPosition)
 	{
-		
+		if (Time.time > m_nextFire)
+		{
+			m_nextFire = Time.time + Config.fireRate;
+			BulletController bullet = BulletStack.Pop().GetComponent<BulletController>();
+			if (bullet != null)
+			{
+				bullet.transform.position = m_transform.position;
+				bullet.direction = targetPosition - m_transform.position;
+				bullet.gameObject.SetActive(true);
+			}
+		}
 	}
 
 	void Awake()

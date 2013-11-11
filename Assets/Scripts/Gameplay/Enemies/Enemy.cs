@@ -4,20 +4,14 @@ using System.Collections;
 [AddComponentMenu ("Enemy/Enemy")]
 public class Enemy : MonoBehaviour
 {
-	[SerializeField]
-	private EnemyConfig m_config;
+	[SerializeField] private EnemyConfig m_config;
 
-	[HideInInspector]
-	private Health m_health;
+	[HideInInspector] private Health m_health;
+	[HideInInspector] private Cannon m_cannon;
+	[HideInInspector] private Multicollider m_multicollider;
+	[HideInInspector] private Transform m_player;
 
-	[HideInInspector]
-	private Cannon m_cannon;
-
-	[HideInInspector]
-	private Multicollider m_multicollider;
-
-	[HideInInspector]
-	private Transform m_player;
+	[HideInInspector] private bool m_insideBarrier;
 
 	void Died()
 	{
@@ -59,6 +53,8 @@ public class Enemy : MonoBehaviour
 		m_multicollider = GetComponent<Multicollider>();
 
 		m_health.Died += Died;
+
+		m_insideBarrier = false;
 
 		if (m_config.aimAtPlayer)
 		{
@@ -105,6 +101,20 @@ public class Enemy : MonoBehaviour
 		if (other.tag == "Bullet")
 		{
 			m_health.Subtract(1);
+		}
+		if (other.tag == "Barrier" && m_insideBarrier)
+		{
+			m_insideBarrier = false;
+			StopAllCoroutines();
+		}
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		if (other.tag == "Barrier" && !m_insideBarrier)
+		{
+			m_insideBarrier = true;
+			StartCoroutine(FireRepeating());
 		}
 	}
 }

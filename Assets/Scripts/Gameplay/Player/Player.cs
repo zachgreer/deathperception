@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
 	{
 		if (other.tag == "Powerup")
 		{
-			Powerup powerup = other.GetComponent<Powerup>();
+			Powerup powerup = other.attachedRigidbody.GetComponent<Powerup>();
 			switch(powerup.Type)
 			{
 				case Powerup.Types.RapidFire:
