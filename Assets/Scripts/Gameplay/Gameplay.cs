@@ -31,4 +31,9 @@ public class Gameplay : MonoBehaviour
 		m_playerHealth = m_player.GetComponent<Health>();
 		m_playerHealth.Died += PlayerDied;
 	}
+	
+	void OnGUI () {
+		GUI.Label (new Rect (25, 75, 100, 30), "Lives: " + m_lives);
+		
+	}
 }

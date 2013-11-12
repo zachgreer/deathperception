@@ -27,7 +27,16 @@ public class PlayerMovement : Movement
 		if (m_in3dMode)
 		{
 			fixedDirection.z = -fixedDirection.x;
-			fixedDirection.x = 0f;
+			if(m_transform.position.x > -6){
+				
+				fixedDirection.x = -2f;
+				
+			}
+			else{
+				
+				fixedDirection.x = 0f;
+				
+			}
 		}
 		m_transform.Translate(fixedDirection * m_config.speed * Time.deltaTime, Space.World);
 		m_transform.position = new Vector3(Mathf.Clamp(m_transform.position.x, -m_config.horizontalLimit, m_config.horizontalLimit), Mathf.Clamp(m_transform.position.y, -m_config.verticalLimit, m_config.verticalLimit), Mathf.Clamp(m_transform.position.z, -m_config.horizontalLimit, m_config.horizontalLimit));
