@@ -43,4 +43,19 @@ public class Powerup : MonoBehaviour
 		// Play sound
 		Destroy(gameObject);
 	}
+	
+	void OnDestroy(){
+		
+	if (ZDrive.Instance != null)
+		{
+			ZDrive.Instance.Switched -= Switched;
+		}
+		
+	}
+	
+	void OnApplicationQuit(){
+		
+		ZDrive.Instance.Switched -= Switched;
+		
+	}
 }
