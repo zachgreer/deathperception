@@ -4,6 +4,7 @@
 public class Gameplay : MonoBehaviour
 {
 	[SerializeField] int m_lives;
+	[SerializeField] Texture m_livesIcon;
 	[SerializeField] int m_respawnTimer;
 	[SerializeField] Transform m_spawnLocation;
 	[SerializeField] GameObject m_player;
@@ -33,7 +34,12 @@ public class Gameplay : MonoBehaviour
 	}
 	
 	void OnGUI () {
-		GUI.Label (new Rect (25, 75, 100, 30), "Lives: " + m_lives);
+		GUI.Label (new Rect (25, 75, 100, 30), "Lives: ");
+		for(int i = 0;i<m_lives;i++){
+			
+		GUI.DrawTexture (new Rect(60+i*25,75,25,30),m_livesIcon);
+			
+		}
 		
 	}
 }
