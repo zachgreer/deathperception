@@ -5,11 +5,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: polySurface2
+    100004: mod_player:polySurface2
     400000: //RootNode
     400002: polySurface2
+    400004: mod_player:polySurface2
     2300000: polySurface2
+    2300002: mod_player:polySurface2
     3300000: polySurface2
+    3300002: mod_player:polySurface2
     4300000: polySurface2
+    4300002: mod_player:polySurface2
     9500000: //RootNode
   materials:
     importMaterials: 0
