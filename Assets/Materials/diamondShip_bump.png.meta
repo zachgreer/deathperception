@@ -1,19 +1,11 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: 792e6c4f8e8384060b73f9387f3002c3
-=======
-guid: b5b9b5a4b99a5df42ba4aae8f7d0e221
->>>>>>> aa8b26d11a4285b0fab32965a54925483a1f9545
-=======
-guid: b5b9b5a4b99a5df42ba4aae8f7d0e221
->>>>>>> 71410706a4f8205942bb1c4872f55cbf117156c2
+guid: c7d70ea1bf819124d9f7cd18a2e20e6e
 TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    linearTexture: 0
+    linearTexture: 1
     correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
@@ -21,7 +13,7 @@ TextureImporter:
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
-    externalNormalMap: 0
+    externalNormalMap: 1
     heightScale: .25
     normalMapFilter: 0
   isReadable: 0
@@ -39,6 +31,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   alphaIsTransparency: 0
-  textureType: -1
+  textureType: 1
   buildTargetSettings: []
   userData: 
