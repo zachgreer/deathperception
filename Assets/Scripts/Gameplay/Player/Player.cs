@@ -18,10 +18,14 @@ public class Player : MonoBehaviour
 	[HideInInspector] private TripleShot m_tripleShot;
 
 	[HideInInspector] private Cannon m_cannon;
+	
+	public AudioClip dieSound;
+	public float dieVolume = 0.5f;
 
 	private void Died()
 	{
 		Score.clearCombo();
+		SoundDie();
 		gameObject.SetActive(false);
 	}
 
@@ -98,4 +102,11 @@ public class Player : MonoBehaviour
 			m_health.Die();
 		}
 	}
+	
+	void SoundDie(){
+		//audio.PlayOneShot(dieSound[Random.Range(0, (dieSound.Length)-1)], dieVolume);
+		Vector3 currentSpot = transform.position;
+		//Debug.Log(currentSpot);
+		AudioSource.PlayClipAtPoint(dieSound, currentSpot,dieVolume);
+}
 }

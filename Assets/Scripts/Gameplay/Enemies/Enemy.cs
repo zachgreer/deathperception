@@ -12,10 +12,17 @@ public class Enemy : MonoBehaviour
 	[HideInInspector] private Transform m_player;
 
 	[HideInInspector] private bool m_insideBarrier;
+	
+	public AudioClip dieSound;
+	public float dieVolume = 0.5f;
+	
+	public AudioClip fireSound;
+	public float fireVolume = 0.5f;
 
 	void Died()
 	{
 		Score.addScore(m_config.points);
+		SoundDie();
 		Destroy(gameObject);
 	}
 
@@ -43,6 +50,7 @@ public class Enemy : MonoBehaviour
 			{
 				m_cannon.Fire();
 			}
+			SoundEnemyFire();
 		}
 	}
 
@@ -117,4 +125,17 @@ public class Enemy : MonoBehaviour
 			StartCoroutine(FireRepeating());
 		}
 	}
+	void SoundDie(){
+		//audio.PlayOneShot(dieSound[Random.Range(0, (dieSound.Length)-1)], dieVolume);
+		Vector3 currentSpot = transform.position;
+		//Debug.Log(currentSpot);
+		AudioSource.PlayClipAtPoint(dieSound, currentSpot,dieVolume);
+}
+	
+	void SoundEnemyFire(){
+		audio.PlayOneShot(fireSound, fireVolume);
+		//Vector3 currentSpot = transform.position;
+		//Debug.Log(currentSpot);
+		//AudioSource.PlayClipAtPoint(dieSound, currentSpot,dieVolume);
+}
 }
