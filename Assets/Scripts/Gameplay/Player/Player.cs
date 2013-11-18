@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 [AddComponentMenu ("Player/Player")]
 [RequireComponent (typeof(Multicollider))]
@@ -16,6 +17,8 @@ public class Player : MonoBehaviour
 	[HideInInspector] private Movement m_movement;
 	[HideInInspector] private SingleShot m_singleShot;
 	[HideInInspector] private TripleShot m_tripleShot;
+	
+	[SerializeField] private GameObject threeDee;
 
 	[HideInInspector] private Cannon m_cannon;
 	
@@ -27,6 +30,21 @@ public class Player : MonoBehaviour
 		Score.clearCombo();
 		SoundDie();
 		gameObject.SetActive(false);
+		
+	}
+	
+	public IEnumerator Blink(float blinkTime){
+	
+		float endTime = Time.time + blinkTime;
+		while(Time.time < endTime){
+			
+			threeDee.renderer.enabled=false;
+			yield return new WaitForSeconds(.1f);
+			threeDee.renderer.enabled = true;
+			yield return new WaitForSeconds(.1f);
+			
+		}
+	
 	}
 
 	private void Switched()
@@ -99,7 +117,7 @@ public class Player : MonoBehaviour
 		}
 		else
 		{
-			m_health.Die();
+			m_health.Subtract(100);
 		}
 	}
 	

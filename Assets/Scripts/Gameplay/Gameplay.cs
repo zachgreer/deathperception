@@ -15,6 +15,8 @@ public class Gameplay : MonoBehaviour
 		m_player.transform.position = m_spawnLocation.position;
 		m_player.GetComponent<Player>().ResetPowerups();
 		m_player.SetActive(true);
+		StartCoroutine(m_player.GetComponent<Player>().Blink(2.0f));
+		
 	}
 
 	void PlayerDied()
