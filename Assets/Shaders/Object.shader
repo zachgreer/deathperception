@@ -8,7 +8,20 @@
 		Tags { "RenderType"="Opaque" }
 		
 		CGPROGRAM
-		#pragma surface surf Lambert
+		#pragma surface surf LambertOverride
+		
+		float _Whiteness;
+		
+		half4 LightingLambertOverride(SurfaceOutput s, half3 lightDir,
+			half atten)
+		{
+			half nDotL = dot(s.Normal, lightDir);
+			half4 c;
+			c.rgb = lerp(s.Albedo * _LightColor0.rgb * (nDotL * atten * 2),
+				1, _Whiteness);
+			c.a = s.Alpha;
+			return c;
+		}
 
 		struct Input {
 			float2 uv_MainTex;
@@ -17,14 +30,12 @@
 
 		sampler2D _MainTex;
 		sampler2D _BumpMap;
-		float _Whiteness;
 
 		void surf (Input IN, inout SurfaceOutput o) {
-			o.Albedo = lerp(tex2D(_MainTex, IN.uv_MainTex).rgb, 1,
-				_Whiteness);
+			o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
 			o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
 		}
 		ENDCG
-	} 
+	}
 	FallBack "Diffuse"
 }
