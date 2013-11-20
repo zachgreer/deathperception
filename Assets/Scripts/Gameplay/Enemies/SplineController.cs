@@ -25,6 +25,7 @@ public class SplineController : MonoBehaviour
 
 	void Start()
 	{
+		iTween.PutOnPath(gameObject, m_path.nodes.ToArray(), 0f);
 		iTween.MoveTo(gameObject, iTween.Hash("path", m_path.nodes.ToArray(),
 			"time", m_time,
 			"easeType", iTween.EaseType.linear,
