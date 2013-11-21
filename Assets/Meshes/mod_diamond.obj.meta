@@ -5,11 +5,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCube1
+    100004: diamondShip_mesh
     400000: //RootNode
     400002: pCube1
+    400004: diamondShip_mesh
     2300000: pCube1
+    2300002: diamondShip_mesh
     3300000: pCube1
+    3300002: diamondShip_mesh
     4300000: pCube1
+    4300002: diamondShip_mesh
     9500000: //RootNode
   materials:
     importMaterials: 0

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 [AddComponentMenu ("Player/Player")]
 [RequireComponent (typeof(Multicollider))]
@@ -16,13 +17,34 @@ public class Player : MonoBehaviour
 	[HideInInspector] private Movement m_movement;
 	[HideInInspector] private SingleShot m_singleShot;
 	[HideInInspector] private TripleShot m_tripleShot;
+	
+	[SerializeField] private GameObject threeDee;
 
 	[HideInInspector] private Cannon m_cannon;
+	
+	public AudioClip dieSound;
+	public float dieVolume = 0.5f;
 
 	private void Died()
 	{
 		Score.clearCombo();
+		SoundDie();
 		gameObject.SetActive(false);
+		
+	}
+	
+	public IEnumerator Blink(float blinkTime){
+	
+		float endTime = Time.time + blinkTime;
+		while(Time.time < endTime){
+			
+			threeDee.renderer.enabled=false;
+			yield return new WaitForSeconds(.1f);
+			threeDee.renderer.enabled = true;
+			yield return new WaitForSeconds(.1f);
+			
+		}
+	
 	}
 
 	private void Switched()
@@ -95,7 +117,14 @@ public class Player : MonoBehaviour
 		}
 		else
 		{
-			m_health.Die();
+			m_health.Subtract(100);
 		}
 	}
+	
+	void SoundDie(){
+		//audio.PlayOneShot(dieSound[Random.Range(0, (dieSound.Length)-1)], dieVolume);
+		Vector3 currentSpot = transform.position;
+		//Debug.Log(currentSpot);
+		AudioSource.PlayClipAtPoint(dieSound, currentSpot,dieVolume);
+}
 }

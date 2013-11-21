@@ -15,6 +15,8 @@ public class Gameplay : MonoBehaviour
 		m_player.transform.position = m_spawnLocation.position;
 		m_player.GetComponent<Player>().ResetPowerups();
 		m_player.SetActive(true);
+		StartCoroutine(m_player.GetComponent<Player>().Blink(2.0f));
+		
 	}
 
 	void PlayerDied()
@@ -37,7 +39,7 @@ public class Gameplay : MonoBehaviour
 		GUI.Label (new Rect (25, 75, 100, 30), "Lives: ");
 		for(int i = 0;i<m_lives;i++){
 			
-		GUI.DrawTexture (new Rect(60+i*25,75,25,30),m_livesIcon);
+		GUI.DrawTexture (new Rect(60+i*15,80,15,15),m_livesIcon);
 			
 		}
 		
