@@ -24,7 +24,7 @@ public class Gameplay : MonoBehaviour
 		m_lives--;
 		if (m_lives <= 0)
 		{
-			Application.LoadLevel(Application.loadedLevel);
+			Application.LoadLevel(0);
 		}
 		Invoke("Respawn", m_respawnTimer);
 	}
