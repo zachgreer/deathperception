@@ -42,9 +42,19 @@ public class Bullet : MonoBehaviour
 		if (other.tag != "Barrier")
 		{
 			// Splash!
+			
+			// Assume that all bullets are children of stacks.
+			gameObject.SetActive(false);
+			transform.parent.GetComponent<ObjectStack>().Push(gameObject);
 		}
-		// Assume that all bullets are children of stacks.
-		gameObject.SetActive(false);
-		transform.parent.GetComponent<ObjectStack>().Push(gameObject);
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		if (other.tag == "Barrier")
+		{
+			gameObject.SetActive(false);
+			transform.parent.GetComponent<ObjectStack>().Push(gameObject);
+		}
 	}
 }
