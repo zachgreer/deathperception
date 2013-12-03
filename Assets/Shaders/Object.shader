@@ -3,12 +3,13 @@
 		_MainTex ("Color (RGB)", 2D) = "white" {}
 		_BumpMap ("Normal", 2D) = "bump" {}
 		_Whiteness ("Whiteness", Range(0.0, 1.0)) = 0.0
+		_Alpha ("Alpha", Range(0.0, 1.0)) = 1.0
 	}
 	SubShader {
-		Tags { "RenderType"="Opaque" }
+		Tags { "Queue"="Transparent" "RenderType"="Transparent" }
 		
 		CGPROGRAM
-		#pragma surface surf LambertOverride
+		#pragma surface surf LambertOverride alpha
 		
 		float _Whiteness;
 		
@@ -30,9 +31,11 @@
 
 		sampler2D _MainTex;
 		sampler2D _BumpMap;
+		float _Alpha;
 
 		void surf (Input IN, inout SurfaceOutput o) {
 			o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
+			o.Alpha = _Alpha;
 			o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
 		}
 		ENDCG

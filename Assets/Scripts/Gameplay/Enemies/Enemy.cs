@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// AI component for enemies.
+/// </summary>
 [AddComponentMenu ("Enemy/Enemy")]
 public class Enemy : MonoBehaviour
 {
 	private void Died()
 	{
-		Score.addScore(m_config.points);
+		Score.addScore(config.points);
 		SoundDie();
 		Destroy(gameObject);
 	}
@@ -19,43 +22,46 @@ public class Enemy : MonoBehaviour
 	private void Switched()
 	{
 		iTween.Resume(gameObject);
-		m_multicollider.Toggle();
+		multicollider.Toggle();
 	}
 
 	private IEnumerator FireRepeating()
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(m_config.fireRate);
-			if (m_config.aimAtPlayer)
-			{
-				if (m_transform.position.x - m_player.position.x > 0)
-					m_cannon.FireAt(m_player.position);
-			}
+			yield return new WaitForSeconds(config.fireRate);
+			if (config.aimAtPlayer)
+				cannon.FireAt(player.position);
 			else
-			{
-				m_cannon.Fire();
-			}
+				cannon.Fire();
 			SoundEnemyFire();
+		}
+	}
+
+	private IEnumerator FadeOut()
+	{
+		for (float timer = fadeTime; timer > 0f; timer -= Time.deltaTime)
+		{
+			material.SetFloat("_Alpha", timer);
 			yield return null;
 		}
 	}
 
 	void Awake()
 	{
-		m_health = GetComponent<Health>();
-		m_cannon = GetComponentInChildren<Cannon>();
-		m_multicollider = GetComponent<Multicollider>();
-		m_material = GetComponentInChildren<Renderer>().material;
-		m_transform = GetComponent<Transform>();
+		health = GetComponent<Health>();
+		cannon = GetComponentInChildren<Cannon>();
+		multicollider = GetComponent<Multicollider>();
+		material = GetComponentInChildren<Renderer>().material;
+		transform = GetComponent<Transform>();
 
-		m_health.Died += Died;
+		health.Died += Died;
 
-		m_insideBarrier = false;
+		insideBarrier = false;
 
-		if (m_config.aimAtPlayer)
+		if (config.aimAtPlayer)
 		{
-			m_player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+			player = GameObject.FindWithTag("Player").GetComponent<Transform>();
 		}
 	}
 
@@ -66,59 +72,68 @@ public class Enemy : MonoBehaviour
 
 		if (ZDrive.Instance.IsOrtho == false)
 		{
-			m_multicollider.Toggle();
+			multicollider.Toggle();
 		}
 	}
 
 	void Update()
 	{
-		m_flash = Mathf.Clamp(m_flash - Time.deltaTime / kFlashDuration, 0f, 1f);
-		m_material.SetFloat("_Whiteness", m_flash);
+		flash = Mathf.Clamp(flash - Time.deltaTime / flashDuration, 0f, 1f);
+		material.SetFloat("_Whiteness", flash);
+
+		if (config.aimAtPlayer && fireTask != null)
+		{
+			if (!fireTask.IsPaused && transform.position.x - player.position.x < 0)
+				fireTask.Pause();
+			if (fireTask.IsPaused && transform.position.x - player.position.x > 0)
+				fireTask.Resume();			
+		}
 	}
 
 	void OnDestroy()
 	{
-		if (m_health.HealthPoints > 0)
-		{
+		if (health.HealthPoints > 0)
 			Score.clearCombo();
-		}
-		if (ZDrive.Instance != null)
+
+		ZDrive zdrive = ZDrive.Instance;
+		if (zdrive != null)
 		{
 			ZDrive.Instance.Switching -= Switching;
 			ZDrive.Instance.Switched -= Switched;
 		}
-	}
 
-	void OnApplicationQuit()
-	{
-		ZDrive.Instance.Switching -= Switching;
-		ZDrive.Instance.Switched -= Switched;
+		if (fireTask != null && fireTask.IsRunning)
+			fireTask.Stop();
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Player")
 		{
-			m_health.Subtract(10);
+			health.Subtract(10);
 		}
 		if (other.tag == "Bullet")
 		{
-			m_health.Subtract(1);
-			m_flash = 0.80f;
+			health.Subtract(1);
+			flash = 0.80f;
 		}
-		if (other.tag == "Barrier" && m_insideBarrier)
+		if (other.tag == "Barrier" && insideBarrier)
 		{
-			m_insideBarrier = false;
-			StopAllCoroutines();
+			insideBarrier = false;
+			fireTask.Stop();
+		}
+		if (other.tag == "FadeBox")
+		{
+			new Task(FadeOut());
 		}
 	}
 
 	void OnTriggerExit(Collider other)
 	{
-		if (other.tag == "Barrier" && !m_insideBarrier)
+		if (other.tag == "Barrier" && !insideBarrier)
 		{
-			m_insideBarrier = true;
-			StartCoroutine(FireRepeating());
+			insideBarrier = true;
+			fireTask = new Task(FireRepeating());
 		}
 	}
 	void SoundDie()
@@ -132,7 +147,7 @@ public class Enemy : MonoBehaviour
 		audio.PlayOneShot(fireSound, fireVolume);
 	}
 
-	[SerializeField] private EnemyConfig m_config;
+	[SerializeField] private EnemyConfig config;
 
 	[SerializeField] private AudioClip dieSound;
 	[SerializeField] private float dieVolume = 0.5f;
@@ -140,16 +155,19 @@ public class Enemy : MonoBehaviour
 	[SerializeField] private AudioClip fireSound;
 	[SerializeField] private float fireVolume = 0.5f;
 
-	[HideInInspector] private Health m_health;
-	[HideInInspector] private Cannon m_cannon;
-	[HideInInspector] private Multicollider m_multicollider;
-	[HideInInspector] private Transform m_transform;
-	[HideInInspector] private Transform m_player;
-	[HideInInspector] private Material m_material;
+	[HideInInspector] private Health health;
+	[HideInInspector] private Cannon cannon;
+	[HideInInspector] private Multicollider multicollider;
+	[HideInInspector] new private Transform transform;
+	[HideInInspector] private Transform player;
+	[HideInInspector] private Material material;
 
-	[HideInInspector] private bool m_insideBarrier;
+	[HideInInspector] private Task fireTask;
 
-	private const float kFlashDuration = 0.25f;
+	[HideInInspector] private bool insideBarrier;
 
-	private float m_flash;
+	private const float flashDuration = 0.25f;
+	private const float fadeTime = 0.50f;
+
+	private float flash;
 }
