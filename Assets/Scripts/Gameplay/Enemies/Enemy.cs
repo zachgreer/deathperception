@@ -29,13 +29,15 @@ public class Enemy : MonoBehaviour
 			yield return new WaitForSeconds(m_config.fireRate);
 			if (m_config.aimAtPlayer)
 			{
-				m_cannon.FireAt(m_player.position);
+				if (m_transform.position.x - m_player.position.x > 0)
+					m_cannon.FireAt(m_player.position);
 			}
 			else
 			{
 				m_cannon.Fire();
 			}
 			SoundEnemyFire();
+			yield return null;
 		}
 	}
 
@@ -45,6 +47,7 @@ public class Enemy : MonoBehaviour
 		m_cannon = GetComponentInChildren<Cannon>();
 		m_multicollider = GetComponent<Multicollider>();
 		m_material = GetComponentInChildren<Renderer>().material;
+		m_transform = GetComponent<Transform>();
 
 		m_health.Died += Died;
 
@@ -140,6 +143,7 @@ public class Enemy : MonoBehaviour
 	[HideInInspector] private Health m_health;
 	[HideInInspector] private Cannon m_cannon;
 	[HideInInspector] private Multicollider m_multicollider;
+	[HideInInspector] private Transform m_transform;
 	[HideInInspector] private Transform m_player;
 	[HideInInspector] private Material m_material;
 
