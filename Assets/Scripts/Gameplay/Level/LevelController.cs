@@ -4,39 +4,46 @@ using System.Collections.Generic;
 [AddComponentMenu ("Gameplay/LevelController")]
 public class LevelController : MonoBehaviour
 {
-	[HideInInspector] private List<string> m_levelFileNames;
-	[HideInInspector] private Level m_currentLevel;
-	[HideInInspector] private Wave m_currentWave;
-	[HideInInspector] private float m_time;
-
-	private const string k_levelInfoFileName = "LevelData/Levels";
+	public int Difficulty
+	{
+		get { return difficulty; }
+		set { difficulty = Mathf.Clamp(value, 1, 3); }
+	}
 
 	void Awake()
 	{
-		m_levelFileNames = LevelLoader.LoadLevelFileNames(k_levelInfoFileName);
-		m_currentLevel = LevelLoader.LoadLevel(m_levelFileNames[0]);
-		m_time = 0f;
+		levelFileNames = LevelLoader.LoadLevelFileNames(levelInfoFilePath);
+		currentLevel = LevelLoader.LoadLevel(levelFileNames[0]);
+		time = 0f;
+		difficulty = 2; // defaults to normal mode
 	}
 
 	void Start()
 	{
-		if (m_currentLevel.HasWavesRemaining)
+		if (currentLevel.HasWavesRemaining)
 		{
-			m_currentWave = m_currentLevel.NextWave;
+			currentWave = currentLevel.NextWave;
 		}
 	}
 
 	void Update()
 	{
-		m_time += Time.deltaTime;
-		if (m_currentWave != null && m_time > m_currentWave.Time)
+		time += Time.deltaTime;
+		if (currentWave != null && time > currentWave.Time)
 		{
-			GameObject.Instantiate(m_currentWave.Prefab);
-			m_currentWave = null;
-			if (m_currentLevel.HasWavesRemaining)
-			{
-				m_currentWave = m_currentLevel.NextWave;
-			}
+			if (currentWave.Difficulty <= difficulty)
+				GameObject.Instantiate(currentWave.Prefab);
+			currentWave = null;
+			if (currentLevel.HasWavesRemaining)
+				currentWave = currentLevel.NextWave;
 		}
 	}
+
+	[HideInInspector] private List<string> levelFileNames;
+	[HideInInspector] private Level currentLevel;
+	[HideInInspector] private Wave currentWave;
+	[HideInInspector] private float time;
+	[HideInInspector] private int difficulty; // Range [1, 3]
+
+	private const string levelInfoFilePath = "LevelData/Levels";
 }

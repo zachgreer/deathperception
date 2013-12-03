@@ -25,8 +25,14 @@ public static class WaveLoader
 		foreach (XmlNode waveNode in waveNodes)
 		{
 			float time = float.Parse(waveNode.Attributes["t"].Value);
+
+			int difficulty = 2; // Default to normal mode if not specified
+			if (waveNode.Attributes["d"] != null) // Backwards compatibility
+				difficulty = int.Parse(waveNode.Attributes["d"].Value);
+
 			GameObject prefab = Resources.Load("Waves/" + waveNode.Attributes["prefab"].Value) as GameObject;
-			waves.Enqueue(new Wave(time, prefab));
+			
+			waves.Enqueue(new Wave(time, difficulty, prefab));
 		}
 
 		return waves;

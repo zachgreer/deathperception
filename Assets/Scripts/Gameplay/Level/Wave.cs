@@ -4,28 +4,29 @@ using System;
 [Serializable]
 public class Wave
 {
-	[HideInInspector] private float m_time;
-	[HideInInspector] private GameObject m_prefab;
-
-	public Wave(float time, GameObject prefab)
+	public Wave(float time, int difficulty, GameObject prefab)
 	{
-		m_time = time;
-		m_prefab = prefab;
+		this.time = time;
+		this.difficulty = difficulty;
+		this.prefab = prefab;
 	}
 
 	public float Time
 	{
-		get
-		{
-			return m_time;
-		}
+		get { return time; }
+	}
+
+	public int Difficulty
+	{
+		get { return difficulty; }
 	}
 
 	public GameObject Prefab
 	{
-		get
-		{
-			return m_prefab;
-		}
+		get { return prefab; }
 	}
+
+	[HideInInspector] private float time;
+	[HideInInspector] private int difficulty;
+	[HideInInspector] private GameObject prefab;
 }
