@@ -25,10 +25,8 @@ public class Crosshairs : MonoBehaviour
 	{
 		transform = GetComponent<Transform>();
 
-		GameObject primaryCrosshairObj = GameObject.FindWithTag("Crosshairs");
-		primaryCrosshair = primaryCrosshairObj.GetComponent<Transform>();
-		// Assuming that the primary crosshair has a single child:
-		secondaryCrosshair = primaryCrosshair.GetChild(0);
+		primaryCrosshair = transform.parent.Find("PrimaryCrosshair");
+		secondaryCrosshair = transform.parent.Find("SecondaryCrosshair");
 		CheckReferences();
 
 		doTilt = false;
@@ -65,17 +63,15 @@ public class Crosshairs : MonoBehaviour
 
 			Vector3 normalized = aimDir.normalized;
 			primaryCrosshair.localPosition = normalized * shortDistance;
-
-			// Necessary because of the obtuse transform heirarchy.
-			Vector3 secondaryPos = normalized * longDistance;
-			float tmpX = secondaryPos.x;
-			secondaryPos.x = secondaryPos.y;
-			secondaryPos.y = -tmpX;
-			secondaryCrosshair.localPosition = secondaryPos;
+			secondaryCrosshair.localPosition = normalized * longDistance;
 		}
 
 		float resetStep = resetSpeed * Time.deltaTime;
 		aimDir = Vector3.Lerp(aimDir, aimOrigin, resetStep);
+
+		Vector3 normalized2 = aimDir.normalized;
+		primaryCrosshair.localPosition = normalized2 * shortDistance;
+		secondaryCrosshair.localPosition = normalized2 * longDistance;
 		
 		transform.LookAt(primaryCrosshair);
 	}
