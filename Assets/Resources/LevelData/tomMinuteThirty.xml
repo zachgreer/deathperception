@@ -15,6 +15,7 @@
 	<wave t="13.0" prefab="Wave_6Popcorn_2"></wave>
 	<wave t="15.0" prefab="Wave_1Diamond_1"></wave>
 	
+	<wave t="17.0" prefab="Wave_1TriShot_1"></wave>
 	<wave t="18.0" prefab="Wave_6Popcorn_3"></wave>
 	<wave t="20.0" prefab="Wave_6Popcorn_4"></wave>
 	<wave t="22.0" prefab="Wave_6Popcorn_3"></wave>
@@ -26,6 +27,7 @@
 	<wave t="34.5" prefab="Wave_1Popcorn_4"></wave>
 	<wave t="35.0" prefab="Wave_1Popcorn_5"></wave>
 	<wave t="35.5" prefab="Wave_1Popcorn_6"></wave>
+	<wave t="36.0" prefab="Wave_1TriShot_1"></wave>
 	<wave t="37.5" prefab="Wave_6Popcorn_3"></wave>
 	<wave t="38.0" prefab="Wave_6Popcorn_4"></wave>
 	<wave t="38.5" prefab="Wave_6Popcorn_3"></wave>
@@ -61,6 +63,7 @@
 	<wave t="62.0" prefab="Wave_1Popcorn_6"></wave>
 	<wave t="62.5" prefab="Wave_2Popcorn_1"></wave>
 	<wave t="62.5" prefab="Wave_1Popcorn_6"></wave>
+	<wave t="63.0" prefab="Wave_1TriShot_1"></wave>
 	
 	<wave t="64.0" prefab="Wave_1Diamond_2"></wave>
 	<wave t="65.0" prefab="Wave_1Diamond_2"></wave>
@@ -71,7 +74,8 @@
 	<wave t="70.0" prefab="Wave_6Popcorn_3"></wave>
 	<wave t="70.0" prefab="Wave_6Popcorn_4"></wave>
 	<wave t="71.0" prefab="Wave_6Popcorn_3"></wave>	
-	<wave t="71.0" prefab="Wave_6Popcorn_4"></wave>	
+	<wave t="71.0" prefab="Wave_6Popcorn_4"></wave>
+	<wave t="73.0" prefab="Wave_1TriShot_1"></wave>	
 	<wave t="79.0" prefab="Wave_6Popcorn_1"></wave>	
 	<wave t="80.0" prefab="Wave_6Diamond_1"></wave>
 	
