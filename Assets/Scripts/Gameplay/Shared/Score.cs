@@ -29,6 +29,20 @@ public class Score : MonoBehaviour {
 		
 	}
 	
+	public static string getScore(){
+		
+	return textScore;
+	
+		
+	}
+	
+	public static string getCombo(){
+		
+	return textCombo;
+	
+		
+	}
+	
 	public static void clearCombo(){
 	
 	combo = 0;
@@ -37,10 +51,7 @@ public class Score : MonoBehaviour {
 		
 	}
 	
-	void OnGUI () {
-		GUI.Label (new Rect (25, 25, 100, 30), "Score: " + textScore);
-		GUI.Label (new Rect (25, 50, 100, 30), "Combo: " + textCombo);
-	}
+	
 	
 	
 }
