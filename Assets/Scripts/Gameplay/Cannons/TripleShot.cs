@@ -38,7 +38,8 @@ public class TripleShot : Cannon
 			{
 				bullet3.transform.position = m_transform.position;
 				Vector3 direction = (Quaternion.AngleAxis(Config.angle, m_transform.right) * Quaternion.AngleAxis(-Config.angle, m_transform.up)) * m_transform.forward;
-				bullet3.direction = (Quaternion.AngleAxis(Config.angle, m_transform.right) * Quaternion.AngleAxis(-Config.angle, m_transform.up)) * m_transform.forward;
+				bullet3.direction = direction;
+				bullet3.transform.Find("3D Mesh").forward = direction;
 				bullet3.gameObject.SetActive(true);
 			}
 		}
