@@ -9,7 +9,7 @@ public class EnemyFactory : SingletonBehaviour<EnemyFactory>
 	public GameObject Create(GameObject prefab)
 	{
 		GameObject obj = Instantiate(prefab) as GameObject;
-		if (obj.tag != "Powerup")
+		if (obj.tag != "Powerup" && obj.tag != "Solid")
 		{
 			obj.GetComponentInChildren<Cannon>().BulletStack = m_bulletStack;
 		}

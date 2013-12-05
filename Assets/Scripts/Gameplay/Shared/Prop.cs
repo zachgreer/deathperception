@@ -16,4 +16,11 @@ public class Prop : MonoBehaviour
 		m_multiCollider = GetComponent<Multicollider>();
 		ZDrive.Instance.Switched += Switched;
 	}
+
+	private void OnDestroy()
+	{
+		ZDrive zdrive = ZDrive.Instance;
+		if (zdrive != null)
+			ZDrive.Instance.Switched -= Switched;
+	}
 }
