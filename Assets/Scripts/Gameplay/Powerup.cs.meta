@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 81dec7930b96fb34e800dea423d1412f
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rapidfirePickupExplosion: {fileID: 100000, guid: 5b68159cb4d8f194eb687481b6ddb006,
+      type: 2}
+  - trishotPickupExplosion: {fileID: 100000, guid: 1b44f06f2ab5f5046b7c3e3d5d073e76,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

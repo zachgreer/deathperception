@@ -13,6 +13,8 @@ public class Powerup : MonoBehaviour
 	[SerializeField] private Types m_type;
 
 	[HideInInspector] private Multicollider m_multicollider;
+	
+	[SerializeField] private GameObject pickupEffect;
 
 	public Types Type
 	{
@@ -39,23 +41,15 @@ public class Powerup : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		// Emit particles
+		Instantiate(pickupEffect, transform.position, Quaternion.identity);
 		// Play sound
 		Destroy(gameObject);
 	}
 	
-	void OnDestroy(){
-		
-	if (ZDrive.Instance != null)
-		{
+	void OnDestroy()
+	{
+		ZDrive zdrive = ZDrive.Instance;	
+		if (zdrive != null)
 			ZDrive.Instance.Switched -= Switched;
-		}
-		
-	}
-	
-	void OnApplicationQuit(){
-		
-		ZDrive.Instance.Switched -= Switched;
-		
 	}
 }
