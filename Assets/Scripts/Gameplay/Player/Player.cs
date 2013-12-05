@@ -115,7 +115,8 @@ public class Player : MonoBehaviour
 					break;
 			}
 		}
-		else
+		
+		else if(other.tag != "Finish")
 		{
 			m_health.Subtract(100);
 		}
