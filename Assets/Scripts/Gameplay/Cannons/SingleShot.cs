@@ -19,6 +19,7 @@ public class SingleShot : Cannon
 			{
 				bullet.transform.position = m_transform.position;
 				bullet.direction = m_transform.forward;
+				bullet.transform.Find("3D Mesh").forward = m_transform.forward;
 				bullet.gameObject.SetActive(true);
 			}
 		}
@@ -34,6 +35,7 @@ public class SingleShot : Cannon
 			{
 				bullet.transform.position = m_transform.position;
 				bullet.direction = targetPosition - m_transform.position;
+				bullet.transform.Find("3D Mesh").forward = targetPosition - m_transform.position;
 				bullet.gameObject.SetActive(true);
 			}
 		}

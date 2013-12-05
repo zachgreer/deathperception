@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
 	{
 		Score.addScore(config.points);
 		SoundDie();
+		Instantiate(config.ExplosionPrefab, transform.position,
+			Quaternion.identity);
 		Destroy(gameObject);
 	}
 
