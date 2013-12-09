@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Now with FOUR bullets!
 public class TripleShot : Cannon
 {
 	public TripleShotConfig Config;
@@ -42,6 +43,14 @@ public class TripleShot : Cannon
 				bullet3.transform.Find("3D Mesh").forward = direction;
 				bullet3.gameObject.SetActive(true);
 			}
+			BulletController bullet4 = BulletStack.Pop().GetComponent<BulletController>();
+			if (bullet4 != null)
+			{
+				bullet4.transform.position = m_transform.position;
+				bullet4.direction = m_transform.forward;
+				bullet4.transform.Find("3D Mesh").forward = m_transform.forward;
+				bullet4.gameObject.SetActive(true);
+			}
 		}
 	}
 
@@ -72,6 +81,14 @@ public class TripleShot : Cannon
 				bullet3.direction = direction;
 				bullet3.transform.Find("3D Mesh").forward = direction;
 				bullet3.gameObject.SetActive(true);
+			}
+			BulletController bullet4 = BulletStack.Pop().GetComponent<BulletController>();
+			if (bullet4 != null)
+			{
+				bullet4.transform.position = m_transform.position;
+				bullet4.direction = targetPosition - m_transform.position;
+				bullet4.transform.Find("3D Mesh").forward = targetPosition - m_transform.position;
+				bullet4.gameObject.SetActive(true);
 			}
 		}
 	}
