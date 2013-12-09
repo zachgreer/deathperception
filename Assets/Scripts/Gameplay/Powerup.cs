@@ -40,10 +40,13 @@ public class Powerup : MonoBehaviour
 	}
 
 	void OnTriggerEnter(Collider other)
+		
 	{
-		Instantiate(pickupEffect, transform.position, Quaternion.identity);
-		// Play sound
-		Destroy(gameObject);
+		if(other.tag == "Player"){
+			Instantiate(pickupEffect, transform.position, Quaternion.identity);
+			// Play sound
+			Destroy(gameObject);
+		}
 	}
 	
 	void OnDestroy()
