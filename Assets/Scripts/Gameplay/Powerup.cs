@@ -24,8 +24,15 @@ public class Powerup : MonoBehaviour
 		}
 	}
 
+	
+	private void Switching()
+	{
+		
+	}
+
 	private void Switched()
 	{
+		
 		m_multicollider.Toggle();
 	}
 
@@ -36,7 +43,13 @@ public class Powerup : MonoBehaviour
 
 	void Start()
 	{
+		ZDrive.Instance.Switching += Switching;
 		ZDrive.Instance.Switched += Switched;
+
+		if (ZDrive.Instance.IsOrtho == false)
+		{
+			m_multicollider.Toggle();
+		}
 	}
 
 	void OnTriggerEnter(Collider other)
