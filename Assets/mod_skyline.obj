@@ -1,0 +1,1499 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib mod_skyline.mtl
+g default
+v 1.716743 -0.498411 0.000000
+v 2.109820 -0.498411 0.000000
+v 1.677508 0.324309 0.000000
+v 2.149055 0.324309 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 1/1/1 2/2/2 4/4/3 3/3/4
+g default
+v 2.016557 -0.237150 -0.012351
+v 2.060253 -0.237150 -0.012351
+v 2.012196 -0.145694 -0.012351
+v 2.064614 -0.145694 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 5/5/5 6/6/6 8/8/7 7/7/8
+g default
+v 2.020640 -0.059163 -0.012351
+v 2.064335 -0.059163 -0.012351
+v 2.016278 0.032293 -0.012351
+v 2.068697 0.032293 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 9/9/9 10/10/10 12/12/11 11/11/12
+g default
+v 2.020636 0.100252 -0.012351
+v 2.064331 0.100252 -0.012351
+v 2.016274 0.191708 -0.012351
+v 2.068693 0.191708 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 13/13/13 14/14/14 16/16/15 15/15/16
+g default
+v 1.783579 -0.237150 -0.012351
+v 1.827275 -0.237150 -0.012351
+v 1.779218 -0.145694 -0.012351
+v 1.831636 -0.145694 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 17/17/17 18/18/18 20/20/19 19/19/20
+g default
+v 1.787662 -0.059163 -0.012351
+v 1.831357 -0.059163 -0.012351
+v 1.783300 0.032293 -0.012351
+v 1.835719 0.032293 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 21/21/21 22/22/22 24/24/23 23/23/24
+g default
+v 1.787658 0.100252 -0.012351
+v 1.831353 0.100252 -0.012351
+v 1.783296 0.191708 -0.012351
+v 1.835715 0.191708 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 25/25/25 26/26/26 28/28/27 27/27/28
+g default
+v 1.892460 -0.491102 -0.012351
+v 1.936155 -0.491102 -0.012351
+v 1.888098 -0.399646 -0.012351
+v 1.940517 -0.399646 -0.012351
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g building_0 skyline building_1 door door
+usemtl initialShadingGroup
+f 29/29/29 30/30/30 32/32/31 31/31/32
+g default
+v -5.132405 -0.499650 -0.022162
+v -4.739328 -0.499650 -0.022162
+v -5.171640 -0.026847 -0.022162
+v -4.700093 -0.026847 -0.022162
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 33/33/33 34/34/34 36/36/35 35/35/36
+g default
+v -4.832590 -0.349508 -0.034513
+v -4.788895 -0.349508 -0.034513
+v -4.836952 -0.296950 -0.034513
+v -4.784534 -0.296950 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 37/37/37 38/38/38 40/40/39 39/39/40
+g default
+v -4.828508 -0.247222 -0.034513
+v -4.784813 -0.247222 -0.034513
+v -4.832869 -0.194664 -0.034513
+v -4.780451 -0.194664 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 41/41/41 42/42/42 44/44/43 43/43/44
+g default
+v -4.828512 -0.155609 -0.034513
+v -4.784817 -0.155609 -0.034513
+v -4.832874 -0.103051 -0.034513
+v -4.780455 -0.103051 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 45/45/45 46/46/46 48/48/47 47/47/48
+g default
+v -5.065569 -0.349508 -0.034513
+v -5.021873 -0.349508 -0.034513
+v -5.069930 -0.296950 -0.034513
+v -5.017512 -0.296950 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 49/49/49 50/50/50 52/52/51 51/51/52
+g default
+v -5.061486 -0.247222 -0.034513
+v -5.017791 -0.247222 -0.034513
+v -5.065848 -0.194664 -0.034513
+v -5.013429 -0.194664 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 53/53/53 54/54/54 56/56/55 55/55/56
+g default
+v -5.061490 -0.155609 -0.034513
+v -5.017795 -0.155609 -0.034513
+v -5.065852 -0.103051 -0.034513
+v -5.013433 -0.103051 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline window_0 building_1 window_1 window_2 window_3 window_4 window_5 window_0 window_1 window_2 window_3 window_4 window_5
+usemtl initialShadingGroup
+f 57/57/57 58/58/58 60/60/59 59/59/60
+g default
+v -4.956688 -0.495450 -0.034513
+v -4.912993 -0.495450 -0.034513
+v -4.961050 -0.442892 -0.034513
+v -4.908631 -0.442892 -0.034513
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g building_0 skyline building_1 door door
+usemtl initialShadingGroup
+f 61/61/61 62/62/62 64/64/63 63/63/64
+g default
+v 1.131240 -0.497130 -0.000000
+v 1.594368 -0.497130 -0.000000
+v 1.131240 0.201290 0.000000
+v 1.594368 0.201290 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 65/65/65 66/66/66 68/68/67 67/67/68
+g default
+v 1.435710 -0.012819 -0.000000
+v 1.522496 -0.012819 -0.000000
+v 1.435710 0.118059 -0.000000
+v 1.522496 0.118059 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 69/69/69 70/70/70 72/72/71 71/71/72
+g default
+v 1.199218 -0.012819 -0.000000
+v 1.286005 -0.012819 -0.000000
+v 1.199218 0.118059 -0.000000
+v 1.286005 0.118059 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 73/73/73 74/74/74 76/76/75 75/75/76
+g default
+v 1.199218 -0.261881 0.000000
+v 1.286005 -0.261881 0.000000
+v 1.199218 -0.131003 0.000000
+v 1.286005 -0.131003 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 77/77/77 78/78/78 80/80/79 79/79/80
+g default
+v 1.437121 -0.261881 0.000000
+v 1.523907 -0.261881 0.000000
+v 1.437121 -0.131003 0.000000
+v 1.523907 -0.131003 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 81/81/81 82/82/82 84/84/83 83/83/84
+g default
+v 1.343361 -0.493866 0.000000
+v 1.393450 -0.493866 0.000000
+v 1.343361 -0.418330 0.000000
+v 1.393450 -0.418330 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 85/85/85 86/86/86 88/88/87 87/87/88
+g default
+v 0.435783 -0.494577 -0.000000
+v 1.073464 -0.494577 -0.000000
+v 0.435783 0.463293 0.000000
+v 1.073464 0.463293 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 89/89/89 90/90/90 92/92/91 91/91/92
+g default
+v 0.855007 0.169647 -0.000000
+v 0.974504 0.169647 -0.000000
+v 0.855007 0.349145 -0.000000
+v 0.974504 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 93/93/93 94/94/94 96/96/95 95/95/96
+g default
+v 0.529381 0.169647 -0.000000
+v 0.648878 0.169647 -0.000000
+v 0.529381 0.349145 -0.000000
+v 0.648878 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 97/97/97 98/98/98 100/100/99 99/99/100
+g default
+v 0.529381 -0.171937 0.000000
+v 0.648878 -0.171937 0.000000
+v 0.529381 0.007560 0.000000
+v 0.648878 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 101/101/101 102/102/102 104/104/103 103/103/104
+g default
+v 0.856950 -0.171937 0.000000
+v 0.976446 -0.171937 0.000000
+v 0.856950 0.007560 0.000000
+v 0.976446 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 105/105/105 106/106/106 108/108/107 107/107/108
+g default
+v 0.727853 -0.490100 0.000000
+v 0.796819 -0.490100 0.000000
+v 0.727853 -0.386504 0.000000
+v 0.796819 -0.386504 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 109/109/109 110/110/110 112/112/111 111/111/112
+g default
+v -0.597637 -0.497555 -0.039267
+v 0.402363 -0.497555 -0.039267
+v -0.597637 0.027469 -0.039267
+v 0.402363 0.027469 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 113/113/113 114/114/114 116/116/115 115/115/116
+g default
+v 0.145651 -0.147802 -0.039267
+v 0.298183 -0.147802 -0.039267
+v 0.145651 -0.067719 -0.039267
+v 0.298183 -0.067719 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 117/117/117 118/118/118 120/120/119 119/119/120
+g default
+v 0.145651 -0.302556 -0.039267
+v 0.298183 -0.302556 -0.039267
+v 0.145651 -0.222473 -0.039267
+v 0.298183 -0.222473 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 121/121/121 122/122/122 124/124/123 123/123/124
+g default
+v -0.167174 -0.147802 -0.039267
+v -0.014642 -0.147802 -0.039267
+v -0.167174 -0.067719 -0.039267
+v -0.014642 -0.067719 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 125/125/125 126/126/126 128/128/127 127/127/128
+g default
+v -0.167174 -0.302556 -0.039267
+v -0.014642 -0.302556 -0.039267
+v -0.167174 -0.222473 -0.039267
+v -0.014642 -0.222473 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 129/129/129 130/130/130 132/132/131 131/131/132
+g default
+v -0.499466 -0.147802 -0.039267
+v -0.346934 -0.147802 -0.039267
+v -0.499466 -0.067719 -0.039267
+v -0.346934 -0.067719 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 133/133/133 134/134/134 136/136/135 135/135/136
+g default
+v -0.499466 -0.302556 -0.039267
+v -0.346934 -0.302556 -0.039267
+v -0.499466 -0.222473 -0.039267
+v -0.346934 -0.222473 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 137/137/137 138/138/138 140/140/139 139/139/140
+g default
+v -0.143142 -0.490340 -0.039267
+v -0.038674 -0.490340 -0.039267
+v -0.143142 -0.410257 -0.039267
+v -0.038674 -0.410257 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 141/141/141 142/142/142 144/144/143 143/143/144
+g default
+v -1.693907 -0.497519 -0.039267
+v -0.693907 -0.497519 -0.039267
+v -1.693907 0.644597 -0.039267
+v -0.693907 0.644597 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 145/145/145 146/146/146 148/148/147 147/147/148
+g default
+v -0.950620 0.263321 -0.039267
+v -0.798088 0.263321 -0.039267
+v -0.950620 0.437530 -0.039267
+v -0.798088 0.437530 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 149/149/149 150/150/150 152/152/151 151/151/152
+g default
+v -0.950620 -0.073327 -0.039267
+v -0.798088 -0.073327 -0.039267
+v -0.950620 0.100883 -0.039267
+v -0.798088 0.100883 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 153/153/153 154/154/154 156/156/155 155/155/156
+g default
+v -1.263445 0.263321 -0.039267
+v -1.110913 0.263321 -0.039267
+v -1.263445 0.437530 -0.039267
+v -1.110913 0.437530 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 157/157/157 158/158/158 160/160/159 159/159/160
+g default
+v -1.263445 -0.073327 -0.039267
+v -1.110913 -0.073327 -0.039267
+v -1.263445 0.100883 -0.039267
+v -1.110913 0.100883 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 161/161/161 162/162/162 164/164/163 163/163/164
+g default
+v -1.595737 0.263321 -0.039267
+v -1.443205 0.263321 -0.039267
+v -1.595737 0.437530 -0.039267
+v -1.443205 0.437530 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 165/165/165 166/166/166 168/168/167 167/167/168
+g default
+v -1.595737 -0.073327 -0.039267
+v -1.443205 -0.073327 -0.039267
+v -1.595737 0.100883 -0.039267
+v -1.443205 0.100883 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 169/169/169 170/170/170 172/172/171 171/171/172
+g default
+v -1.239413 -0.481825 -0.039267
+v -1.134944 -0.481825 -0.039267
+v -1.239413 -0.307615 -0.039267
+v -1.134944 -0.307615 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 173/173/173 174/174/174 176/176/175 175/175/176
+g default
+v -2.446050 -0.497483 -0.000000
+v -1.808369 -0.497483 -0.000000
+v -2.446050 0.222154 0.000000
+v -1.808369 0.222154 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 177/177/177 178/178/178 180/180/179 179/179/180
+g default
+v -2.026825 0.001541 -0.000000
+v -1.907329 0.001541 -0.000000
+v -2.026825 0.136395 -0.000000
+v -1.907329 0.136395 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 181/181/181 182/182/182 184/184/183 183/183/184
+g default
+v -2.352451 0.001541 -0.000000
+v -2.232955 0.001541 -0.000000
+v -2.352451 0.136395 -0.000000
+v -2.232955 0.136395 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 185/185/185 186/186/186 188/188/187 187/187/188
+g default
+v -2.352451 -0.255087 0.000000
+v -2.232955 -0.255087 0.000000
+v -2.352451 -0.120233 0.000000
+v -2.232955 -0.120233 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 189/189/189 190/190/190 192/192/191 191/191/192
+g default
+v -2.024883 -0.255087 0.000000
+v -1.905386 -0.255087 0.000000
+v -2.024883 -0.120233 0.000000
+v -1.905386 -0.120233 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 193/193/193 194/194/194 196/196/195 195/195/196
+g default
+v -2.153980 -0.494119 0.000000
+v -2.085013 -0.494119 0.000000
+v -2.153980 -0.416289 0.000000
+v -2.085013 -0.416289 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 197/197/197 198/198/198 200/200/199 199/199/200
+g default
+v -3.220099 -0.494577 -0.000000
+v -2.582418 -0.494577 -0.000000
+v -3.220099 0.463293 0.000000
+v -2.582418 0.463293 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 201/201/201 202/202/202 204/204/203 203/203/204
+g default
+v -2.800874 0.169647 -0.000000
+v -2.681378 0.169647 -0.000000
+v -2.800874 0.349145 -0.000000
+v -2.681378 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 205/205/205 206/206/206 208/208/207 207/207/208
+g default
+v -3.126500 0.169647 -0.000000
+v -3.007004 0.169647 -0.000000
+v -3.126500 0.349145 -0.000000
+v -3.007004 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 209/209/209 210/210/210 212/212/211 211/211/212
+g default
+v -3.126500 -0.171937 0.000000
+v -3.007004 -0.171937 0.000000
+v -3.126500 0.007560 0.000000
+v -3.007004 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 213/213/213 214/214/214 216/216/215 215/215/216
+g default
+v -2.798931 -0.171937 0.000000
+v -2.679435 -0.171937 0.000000
+v -2.798931 0.007560 0.000000
+v -2.679435 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 217/217/217 218/218/218 220/220/219 219/219/220
+g default
+v -2.928029 -0.490100 0.000000
+v -2.859062 -0.490100 0.000000
+v -2.928029 -0.386504 0.000000
+v -2.859062 -0.386504 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 221/221/221 222/222/222 224/224/223 223/223/224
+g default
+v -3.830462 -0.497130 -0.000000
+v -3.367334 -0.497130 -0.000000
+v -3.830462 0.201290 0.000000
+v -3.367334 0.201290 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 225/225/225 226/226/226 228/228/227 227/227/228
+g default
+v -3.525992 -0.012819 -0.000000
+v -3.439206 -0.012819 -0.000000
+v -3.525992 0.118059 -0.000000
+v -3.439206 0.118059 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 229/229/229 230/230/230 232/232/231 231/231/232
+g default
+v -3.762484 -0.012819 -0.000000
+v -3.675697 -0.012819 -0.000000
+v -3.762484 0.118059 -0.000000
+v -3.675697 0.118059 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 233/233/233 234/234/234 236/236/235 235/235/236
+g default
+v -3.762484 -0.261881 0.000000
+v -3.675697 -0.261881 0.000000
+v -3.762484 -0.131003 0.000000
+v -3.675697 -0.131003 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 237/237/237 238/238/238 240/240/239 239/239/240
+g default
+v -3.524581 -0.261881 0.000000
+v -3.437795 -0.261881 0.000000
+v -3.524581 -0.131003 0.000000
+v -3.437795 -0.131003 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 241/241/241 242/242/242 244/244/243 243/243/244
+g default
+v -3.618341 -0.493866 0.000000
+v -3.568252 -0.493866 0.000000
+v -3.618341 -0.418330 0.000000
+v -3.568252 -0.418330 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 245/245/245 246/246/246 248/248/247 247/247/248
+g default
+v -4.620207 -0.494577 -0.000000
+v -3.982526 -0.494577 -0.000000
+v -4.620207 0.463293 0.000000
+v -3.982526 0.463293 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 249/249/249 250/250/250 252/252/251 251/251/252
+g default
+v -4.200983 0.169647 -0.000000
+v -4.081486 0.169647 -0.000000
+v -4.200983 0.349145 -0.000000
+v -4.081486 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 253/253/253 254/254/254 256/256/255 255/255/256
+g default
+v -4.526609 0.169647 -0.000000
+v -4.407112 0.169647 -0.000000
+v -4.526609 0.349145 -0.000000
+v -4.407112 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 257/257/257 258/258/258 260/260/259 259/259/260
+g default
+v -4.526609 -0.171937 0.000000
+v -4.407112 -0.171937 0.000000
+v -4.526609 0.007560 0.000000
+v -4.407112 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 261/261/261 262/262/262 264/264/263 263/263/264
+g default
+v -4.199040 -0.171937 0.000000
+v -4.079544 -0.171937 0.000000
+v -4.199040 0.007560 0.000000
+v -4.079544 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 265/265/265 266/266/266 268/268/267 267/267/268
+g default
+v -4.328137 -0.490100 0.000000
+v -4.259171 -0.490100 0.000000
+v -4.328137 -0.386504 0.000000
+v -4.259171 -0.386504 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 269/269/269 270/270/270 272/272/271 271/271/272
+g default
+v -6.249752 -0.497519 -0.039267
+v -5.249752 -0.497519 -0.039267
+v -6.249752 0.644597 -0.039267
+v -5.249752 0.644597 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 273/273/273 274/274/274 276/276/275 275/275/276
+g default
+v -5.506464 0.263321 -0.039267
+v -5.353932 0.263321 -0.039267
+v -5.506464 0.437530 -0.039267
+v -5.353932 0.437530 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 277/277/277 278/278/278 280/280/279 279/279/280
+g default
+v -5.506464 -0.073327 -0.039267
+v -5.353932 -0.073327 -0.039267
+v -5.506464 0.100883 -0.039267
+v -5.353932 0.100883 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 281/281/281 282/282/282 284/284/283 283/283/284
+g default
+v -5.819289 0.263321 -0.039267
+v -5.666757 0.263321 -0.039267
+v -5.819289 0.437530 -0.039267
+v -5.666757 0.437530 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 285/285/285 286/286/286 288/288/287 287/287/288
+g default
+v -5.819289 -0.073327 -0.039267
+v -5.666757 -0.073327 -0.039267
+v -5.819289 0.100883 -0.039267
+v -5.666757 0.100883 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 289/289/289 290/290/290 292/292/291 291/291/292
+g default
+v -6.151581 0.263321 -0.039267
+v -5.999049 0.263321 -0.039267
+v -6.151581 0.437530 -0.039267
+v -5.999049 0.437530 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 293/293/293 294/294/294 296/296/295 295/295/296
+g default
+v -6.151581 -0.073327 -0.039267
+v -5.999049 -0.073327 -0.039267
+v -6.151581 0.100883 -0.039267
+v -5.999049 0.100883 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 297/297/297 298/298/298 300/300/299 299/299/300
+g default
+v -5.795257 -0.481825 -0.039267
+v -5.690789 -0.481825 -0.039267
+v -5.795257 -0.307615 -0.039267
+v -5.690789 -0.307615 -0.039267
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+vn 0.000000 0.000000 1.000000
+s off
+g skyline building_4 window_0 building_5 building_13 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door window_0 window_1 window_2 window_3 window_4 window_5 door
+usemtl initialShadingGroup
+f 301/301/301 302/302/302 304/304/303 303/303/304
+g default
+v -7.043052 -0.497483 -0.000000
+v -6.405371 -0.497483 -0.000000
+v -7.043052 0.222154 0.000000
+v -6.405371 0.222154 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 305/305/305 306/306/306 308/308/307 307/307/308
+g default
+v -6.623827 0.001541 -0.000000
+v -6.504331 0.001541 -0.000000
+v -6.623827 0.136395 -0.000000
+v -6.504331 0.136395 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 309/309/309 310/310/310 312/312/311 311/311/312
+g default
+v -6.949453 0.001541 -0.000000
+v -6.829957 0.001541 -0.000000
+v -6.949453 0.136395 -0.000000
+v -6.829957 0.136395 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 313/313/313 314/314/314 316/316/315 315/315/316
+g default
+v -6.949453 -0.255087 0.000000
+v -6.829957 -0.255087 0.000000
+v -6.949453 -0.120233 0.000000
+v -6.829957 -0.120233 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 317/317/317 318/318/318 320/320/319 319/319/320
+g default
+v -6.621885 -0.255087 0.000000
+v -6.502388 -0.255087 0.000000
+v -6.621885 -0.120233 0.000000
+v -6.502388 -0.120233 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 321/321/321 322/322/322 324/324/323 323/323/324
+g default
+v -6.750982 -0.494119 0.000000
+v -6.682015 -0.494119 0.000000
+v -6.750982 -0.416289 0.000000
+v -6.682015 -0.416289 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 325/325/325 326/326/326 328/328/327 327/327/328
+g default
+v -7.746076 -0.494577 -0.000000
+v -7.108394 -0.494577 -0.000000
+v -7.746076 0.463293 0.000000
+v -7.108394 0.463293 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 329/329/329 330/330/330 332/332/331 331/331/332
+g default
+v -7.326851 0.169647 -0.000000
+v -7.207355 0.169647 -0.000000
+v -7.326851 0.349145 -0.000000
+v -7.207355 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 333/333/333 334/334/334 336/336/335 335/335/336
+g default
+v -7.652477 0.169647 -0.000000
+v -7.532980 0.169647 -0.000000
+v -7.652477 0.349145 -0.000000
+v -7.532980 0.349145 -0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 337/337/337 338/338/338 340/340/339 339/339/340
+g default
+v -7.652477 -0.171937 0.000000
+v -7.532980 -0.171937 0.000000
+v -7.652477 0.007560 0.000000
+v -7.532980 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 341/341/341 342/342/342 344/344/343 343/343/344
+g default
+v -7.324908 -0.171937 0.000000
+v -7.205412 -0.171937 0.000000
+v -7.324908 0.007560 0.000000
+v -7.205412 0.007560 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 345/345/345 346/346/346 348/348/347 347/347/348
+g default
+v -7.454006 -0.490100 0.000000
+v -7.385039 -0.490100 0.000000
+v -7.454006 -0.386504 0.000000
+v -7.385039 -0.386504 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+vn 0.000000 -0.000000 1.000000
+s off
+g skyline building_2 window_0 building_3 building_6 building_7 building_10 building_11 building_14 building_15 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door window_0 window_1 window_2 window_3 door
+usemtl initialShadingGroup
+f 349/349/349 350/350/350 352/352/351 351/351/352
