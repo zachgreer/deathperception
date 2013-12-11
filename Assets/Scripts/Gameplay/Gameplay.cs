@@ -64,20 +64,24 @@ public class Gameplay : MonoBehaviour
 	
 	void OnGUI () {
 		
+		
+		
 		if(!m_gameOver){
+			GUI.color = Color.black;
 			GUI.Label (new Rect (25, 75, 100, 30), "Lives: ");
 			for(int i = 0;i<m_lives;i++){
-				
+			GUI.color = Color.white;	
 			GUI.DrawTexture (new Rect(60+i*15,80,15,15),m_livesIcon);
 				
 			}
+			GUI.color = Color.black;
 			GUI.Label (new Rect (25, 25, 100, 30), "Score: " + Score.getScore ());
 			GUI.Label (new Rect (25, 50, 100, 30), "Combo: " + Score.getCombo ());
 		}
 		
 		if(m_gameOver){
 			
-			
+			GUI.color = Color.white;
 			GUI.Box(new Rect(480,250,140,200), "Game Over");
 			GUI.Label(new Rect(500,300,100,25), "Score: "+Score.getScore());
 			if (GUI.Button (new Rect (500,350,100,25), "Retry")) {
@@ -92,6 +96,7 @@ public class Gameplay : MonoBehaviour
 		}
 		
 		if(isPaused && !m_gameOver){
+			GUI.color = Color.white;
 			GUI.Box(new Rect(480,250,140,90), "Paused");
 			if (GUI.Button (new Rect (500,300,100,25), "Resume")) {
 				switchPause();

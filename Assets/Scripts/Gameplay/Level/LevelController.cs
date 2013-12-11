@@ -15,7 +15,12 @@ public class LevelController : MonoBehaviour
 		levelFileNames = LevelLoader.LoadLevelFileNames(levelInfoFilePath);
 		currentLevel = LevelLoader.LoadLevel(levelFileNames[0]);
 		time = 0f;
+		int diff = PlayerPrefs.GetInt ("Diff");
+		if( diff == 0){
 		difficulty = 2; // defaults to normal mode
+		}else{
+		difficulty = diff;
+		}
 	}
 
 	void Start()
@@ -44,6 +49,7 @@ public class LevelController : MonoBehaviour
 	[HideInInspector] private Wave currentWave;
 	[HideInInspector] private float time;
 	[HideInInspector] private int difficulty; // Range [1, 3]
+
 
 	private const string levelInfoFilePath = "LevelData/Levels";
 }
