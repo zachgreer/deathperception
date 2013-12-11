@@ -8,28 +8,53 @@ ModelImporter:
     100004: pSphere2
     100006: pSphere3
     100008: pSphere4
+    100010: EnemyShip_1_v1:pSphere1
+    100012: EnemyShip_1_v1:pSphere2
+    100014: EnemyShip_1_v1:pSphere3
+    100016: EnemyShip_1_v1:pSphere4
+    100018: polySurface1
     400000: //RootNode
     400002: pSphere1
     400004: pSphere2
     400006: pSphere3
     400008: pSphere4
+    400010: EnemyShip_1_v1:pSphere1
+    400012: EnemyShip_1_v1:pSphere2
+    400014: EnemyShip_1_v1:pSphere3
+    400016: EnemyShip_1_v1:pSphere4
+    400018: polySurface1
     2300000: pSphere1
     2300002: pSphere2
     2300004: pSphere3
     2300006: pSphere4
+    2300008: EnemyShip_1_v1:pSphere1
+    2300010: EnemyShip_1_v1:pSphere2
+    2300012: EnemyShip_1_v1:pSphere3
+    2300014: EnemyShip_1_v1:pSphere4
+    2300016: polySurface1
     3300000: pSphere1
     3300002: pSphere2
     3300004: pSphere3
     3300006: pSphere4
+    3300008: EnemyShip_1_v1:pSphere1
+    3300010: EnemyShip_1_v1:pSphere2
+    3300012: EnemyShip_1_v1:pSphere3
+    3300014: EnemyShip_1_v1:pSphere4
+    3300016: polySurface1
     4300000: pSphere1
     4300002: pSphere2
     4300004: pSphere3
     4300006: pSphere4
+    4300008: EnemyShip_1_v1:pSphere1
+    4300010: EnemyShip_1_v1:pSphere2
+    4300012: EnemyShip_1_v1:pSphere3
+    4300014: EnemyShip_1_v1:pSphere4
+    4300016: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 2
+    materialSearch: 2
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
